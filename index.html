@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Instagram Feed</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-light bg-light">
+                    <a class="navbar-brand m-auto m-md-0" href="#">
+                        <img src="https://cdn.icon-icons.com/icons2/3237/PNG/512/instagram_logo_brand_social_media_application_icon_197362.png" alt="" width="30" height="24" class="d-inline-block align-text-top mt-1 ms-2">
+                        Instagram Feed
+                    </a>
+                    <div class="d-grid gap-2 d-flex m-auto m-md-0 justify-content-md-end">
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalNewPost">
+                            Create a new post
+                        </button>
+                        <div class="dropdown">
+                            <button type="button" class="btn dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-gear" alt="" width="30" height="24"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                        <i class="fa-solid fa-table-cells"></i>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                            <i class="fa-solid fa-square"></i>
+                        </button>
+                    </li>
+                </ul>
+
+                    <!-- pag1 -->
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                       
+                        <div class="container mx-auto">
+                            <div class="row m-2">
+                                <div class="col-md-4 col-4 mt-2 ps-1 pe-1">
+                                    <div class="h-100 w-100">
+                                        <img src="https://www.hogarmania.com/archivos/202208/shiba-inu-1-XxXx80.jpg" class="img-fluid h-100 w-100" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-4 mt-2 ps-1 pe-1">
+                                    <div class="h-100 w-100">
+                                        <img src="https://img.freepik.com/free-photo/medium-shot-happy-friends-city_23-2149003088.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1698883200&semt=ais.jpg" class="img-fluid h-100 w-100" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-4 mt-2 ps-1 pe-1">
+                                    <div class="h-100 w-100">
+                                        <img src="https://a.cdn-hotels.com/gdcs/production107/d625/d22d2448-0238-4573-b055-6b079e972dbb.jpg" class="img-fluid h-100 w-100" alt="...">
+                                    </div>
+                                </div>
+                            
+                                <div class="col-md-4 col-4 mt-2 ps-1 pe-1">
+                                    <div class="h-100 w-100">
+                                        <img src="https://epe.brightspotcdn.com/53/66/b17323e84e668e02e25d5b4a7a93/teacher-students-classroom.jpg" class="img-fluid h-100 w-100" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-4 mt-2 ps-1 pe-1">
+                                    <div class="h-100 w-100">
+                                        <img src="https://www.herofincorp.com/public/admin_assets/upload/blog/64b91a06ab1c8_food%20business%20ideas.webp" class="img-fluid h-100 w-100" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-4 mt-2 ps-1 pe-1">
+                                    <div class="h-100 w-100">
+                                        <img src="https://www.triatlonweb.es/uploads/s1/76/56/86/6/runner.jpeg" class="img-fluid h-100 w-100" alt="...">
+                                    </div>
+                                </div>
+                            
+                                <div class="col-md-4 col-4 mt-2 ps-1 pe-1">
+                                    <div class="h-100 w-100">
+                                        <img src="https://www.miamiandbeaches.com/getmedia/d9a832ca-4768-4f80-a5a5-666be85132c1/Green-lifeguard-stand-sunrise-1440x900.jpg?width=1000&resizemode=force" class="img-fluid h-100 w-100" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-4 mt-2 ps-1 pe-1">
+                                    <div class="h-100 w-100">
+                                        <img src="https://thumbnails.production.thenounproject.com/3Ecw9-btxPb-BCxEjVgVCLttFqI=/fit-in/1000x1000/photos.production.thenounproject.com/photos/A330EBBA-1B35-4814-AFDD-9DF13B45D70E.jpg" class="img-fluid h-100 w-100" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-4 mt-2 ps-1 pe-1">
+                                    <div class="h-100 w-100">
+                                        <img src="https://t4.ftcdn.net/jpg/00/62/65/29/360_F_62652907_dZgAPIdcVKu8DPCeUPvLRCb9JdHrnpVG.jpg" class="img-fluid h-100 w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- pag2 -->
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-10 col-md-6 mx-auto border border-secondary-subtle rounded p-0 mb-3 mt-3">
+                                <div class="d-flex">
+                                    <h5 class="me-auto text-start p-2 mb-0">Our sweet boy Oliver!</h5>
+                                    <p class="text-end p-2 mb-0">4/23</p>
+                                </div>
+                                <img src="https://www.hogarmania.com/archivos/202208/shiba-inu-1-XxXx80.jpg" class="card-img-top" alt="...">
+                                <div class="ps-2 mb-0">
+                                    <div class="d-flex">
+                                        <div class="me-auto text-start mb-0">
+                                            <i class="fa-regular fa-heart fs-4 pt-2 pe-1 mb-0"></i>
+                                            <i class="fa-regular fa-comment fs-4 pt-2 pe-1 mb-0"></i>
+                                            <i class="fa-regular fa-paper-plane fs-4 pt-2 pe-1 mb-0"></i>
+                                        </div>
+                                        <div class="">
+                                            <i class="fa-regular fa-bookmark fs-4 text-end pt-2 pe-2 mb-0"></i>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <p class="p-2 fw-bold mb-0 pb-0">308 Likes</p>
+                                <p class="p-2">This is an example of a photo that you can post on Instagram.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 col-md-6 mx-auto border border-secondary-subtle rounded p-0 mb-3">
+                                <div class="d-flex">
+                                    <h5 class="me-auto text-start p-2 mb-0">Traveling with friends</h5>
+                                    <p class="text-end p-2 mb-0">5/23</p>
+                                </div>
+                                <img src="https://img.freepik.com/free-photo/medium-shot-happy-friends-city_23-2149003088.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1698883200&semt=ais.jpg" class="card-img-top" alt="...">
+                                <div class="ps-2 mb-0">
+                                    <div class="d-flex">
+                                        <div class="me-auto text-start mb-0">
+                                            <i class="fa-regular fa-heart fs-4 pt-2 pe-1 mb-0"></i>
+                                            <i class="fa-regular fa-comment fs-4 pt-2 pe-1 mb-0"></i>
+                                            <i class="fa-regular fa-paper-plane fs-4 pt-2 pe-1 mb-0"></i>
+                                        </div>
+                                        <div class="">
+                                            <i class="fa-regular fa-bookmark fs-4 text-end pt-2 pe-2 mb-0"></i>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <p class="p-2 fw-bold mb-0 pb-0">475 Likes</p>
+                                <p class="p-2">This is an example of a photo that you can post on Instagram.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 col-md-6 mx-auto border border-secondary-subtle rounded p-0 mb-3">
+                                <div class="d-flex">
+                                    <h5 class="me-auto text-start p-2 mb-0">Paris</h5>
+                                    <p class="text-end p-2 mb-0">5/23</p>
+                                </div>
+                                <img src="https://a.cdn-hotels.com/gdcs/production107/d625/d22d2448-0238-4573-b055-6b079e972dbb.jpg" class="card-img-top" alt="...">
+                                <div class="ps-2 mb-0">
+                                    <div class="d-flex">
+                                        <div class="me-auto text-start mb-0">
+                                            <i class="fa-regular fa-heart fs-4 pt-2 pe-1 mb-0"></i>
+                                            <i class="fa-regular fa-comment fs-4 pt-2 pe-1 mb-0"></i>
+                                            <i class="fa-regular fa-paper-plane fs-4 pt-2 pe-1 mb-0"></i>
+                                        </div>
+                                        <div class="">
+                                            <i class="fa-regular fa-bookmark fs-4 text-end pt-2 pe-2 mb-0"></i>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <p class="p-2 fw-bold mb-0 pb-0">359 Likes</p>
+                                <p class="p-2">This is an example of a photo that you can post on Instagram.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 col-md-6 mx-auto border border-secondary-subtle rounded p-0 mb-3">
+                                <div class="d-flex">
+                                    <h5 class="me-auto text-start p-2 mb-0">Learning is an exciting experience</h5>
+                                    <p class="text-end p-2 mb-0">6/23</p>
+                                </div>
+                                <img src="https://epe.brightspotcdn.com/53/66/b17323e84e668e02e25d5b4a7a93/teacher-students-classroom.jpg" class="card-img-top" alt="...">
+                                <div class="ps-2 mb-0">
+                                    <div class="d-flex">
+                                        <div class="me-auto text-start mb-0">
+                                            <i class="fa-regular fa-heart fs-4 pt-2 pe-1 mb-0"></i>
+                                            <i class="fa-regular fa-comment fs-4 pt-2 pe-1 mb-0"></i>
+                                            <i class="fa-regular fa-paper-plane fs-4 pt-2 pe-1 mb-0"></i>
+                                        </div>
+                                        <div class="">
+                                            <i class="fa-regular fa-bookmark fs-4 text-end pt-2 pe-2 mb-0"></i>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <p class="p-2 fw-bold mb-0 pb-0">231 Likes</p>
+                                <p class="p-2">This is an example of a photo that you can post on Instagram.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 col-md-6 mx-auto border border-secondary-subtle rounded p-0 mb-3">
+                                <div class="d-flex">
+                                    <h5 class="me-auto text-start p-2 mb-0">Tasty!</h5>
+                                    <p class="text-end p-2 mb-0">7/23</p>
+                                </div>
+                                <img src="https://www.herofincorp.com/public/admin_assets/upload/blog/64b91a06ab1c8_food%20business%20ideas.webp" class="card-img-top" alt="...">
+                                <div class="ps-2 mb-0">
+                                    <div class="d-flex">
+                                        <div class="me-auto text-start mb-0">
+                                            <i class="fa-regular fa-heart fs-4 pt-2 pe-1 mb-0"></i>
+                                            <i class="fa-regular fa-comment fs-4 pt-2 pe-1 mb-0"></i>
+                                            <i class="fa-regular fa-paper-plane fs-4 pt-2 pe-1 mb-0"></i>
+                                        </div>
+                                        <div class="">
+                                            <i class="fa-regular fa-bookmark fs-4 text-end pt-2 pe-2 mb-0"></i>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <p class="p-2 fw-bold mb-0 pb-0">190 Likes</p>
+                                <p class="p-2">This is an example of a photo that you can post on Instagram.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 col-md-6 mx-auto border border-secondary-subtle rounded p-0 mb-3">
+                                <div class="d-flex">
+                                    <h5 class="me-auto text-start p-2 mb-0">Let's go running</h5>
+                                    <p class="text-end p-2 mb-0">8/23</p>
+                                </div>
+                                <img src="https://www.triatlonweb.es/uploads/s1/76/56/86/6/runner.jpeg" class="card-img-top" alt="...">
+                                <div class="ps-2 mb-0">
+                                    <div class="d-flex">
+                                        <div class="me-auto text-start mb-0">
+                                            <i class="fa-regular fa-heart fs-4 pt-2 pe-1 mb-0"></i>
+                                            <i class="fa-regular fa-comment fs-4 pt-2 pe-1 mb-0"></i>
+                                            <i class="fa-regular fa-paper-plane fs-4 pt-2 pe-1 mb-0"></i>
+                                        </div>
+                                        <div class="">
+                                            <i class="fa-regular fa-bookmark fs-4 text-end pt-2 pe-2 mb-0"></i>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <p class="p-2 fw-bold mb-0 pb-0">252 Likes</p>
+                                <p class="p-2">This is an example of a photo that you can post on Instagram.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 col-md-6 mx-auto border border-secondary-subtle rounded p-0 mb-3">
+                                <div class="d-flex">
+                                    <h5 class="me-auto text-start p-2 mb-0">Relaxing time at the beach</h5>
+                                    <p class="text-end p-2 mb-0">8/23</p>
+                                </div>
+                                <img src="https://www.miamiandbeaches.com/getmedia/d9a832ca-4768-4f80-a5a5-666be85132c1/Green-lifeguard-stand-sunrise-1440x900.jpg?width=1000&resizemode=force" class="card-img-top" alt="...">
+                                <div class="ps-2 mb-0">
+                                    <div class="d-flex">
+                                        <div class="me-auto text-start mb-0">
+                                            <i class="fa-regular fa-heart fs-4 pt-2 pe-1 mb-0"></i>
+                                            <i class="fa-regular fa-comment fs-4 pt-2 pe-1 mb-0"></i>
+                                            <i class="fa-regular fa-paper-plane fs-4 pt-2 pe-1 mb-0"></i>
+                                        </div>
+                                        <div class="">
+                                            <i class="fa-regular fa-bookmark fs-4 text-end pt-2 pe-2 mb-0"></i>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <p class="p-2 fw-bold mb-0 pb-0">163 Likes</p>
+                                <p class="p-2">This is an example of a photo that you can post on Instagram.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 col-md-6 mx-auto border border-secondary-subtle rounded p-0 mb-3">
+                                <div class="d-flex">
+                                    <h5 class="me-auto text-start p-2 mb-0">Smile!</h5>
+                                    <p class="text-end p-2 mb-0">9/23</p>
+                                </div>
+                                <img src="https://thumbnails.production.thenounproject.com/3Ecw9-btxPb-BCxEjVgVCLttFqI=/fit-in/1000x1000/photos.production.thenounproject.com/photos/A330EBBA-1B35-4814-AFDD-9DF13B45D70E.jpg" class="card-img-top" alt="...">
+                                <div class="ps-2 mb-0">
+                                    <div class="d-flex">
+                                        <div class="me-auto text-start mb-0">
+                                            <i class="fa-regular fa-heart fs-4 pt-2 pe-1 mb-0"></i>
+                                            <i class="fa-regular fa-comment fs-4 pt-2 pe-1 mb-0"></i>
+                                            <i class="fa-regular fa-paper-plane fs-4 pt-2 pe-1 mb-0"></i>
+                                        </div>
+                                        <div class="">
+                                            <i class="fa-regular fa-bookmark fs-4 text-end pt-2 pe-2 mb-0"></i>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <p class="p-2 fw-bold mb-0 pb-0">504 Likes</p>
+                                <p class="p-2">This is an example of a photo that you can post on Instagram.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 col-md-6 mx-auto border border-secondary-subtle rounded p-0 mb-3">
+                                <div class="d-flex">
+                                    <h5 class="me-auto text-start p-2 mb-0">Doing some painting...</h5>
+                                    <p class="text-end p-2 mb-0">10/23</p>
+                                </div>
+                                <img src="https://t4.ftcdn.net/jpg/00/62/65/29/360_F_62652907_dZgAPIdcVKu8DPCeUPvLRCb9JdHrnpVG.jpg" class="card-img-top" alt="...">
+                                <div class="ps-2 mb-0">
+                                    <div class="d-flex">
+                                        <div class="me-auto text-start mb-0">
+                                            <i class="fa-regular fa-heart fs-4 pt-2 pe-1 mb-0"></i>
+                                            <i class="fa-regular fa-comment fs-4 pt-2 pe-1 mb-0"></i>
+                                            <i class="fa-regular fa-paper-plane fs-4 pt-2 pe-1 mb-0"></i>
+                                        </div>
+                                        <div class="">
+                                            <i class="fa-regular fa-bookmark fs-4 text-end pt-2 pe-2 mb-0"></i>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <p class="p-2 fw-bold mb-0 pb-0">267 Likes</p>
+                                <p class="p-2">This is an example of a photo that you can post on Instagram.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalNewPost" tabindex="-1" aria-labelledby="modalNewPostLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create a new post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Caption:</p>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                    <div class="d-grid gap-2 d-flex pt-2">
+                        <button type="button" class="btn btn-light border border-secondary-subtle">
+                            <i class="fa-solid fa-camera" alt="" width="30" height="24" class="d-inline-block align-text-top"></i>
+                        </button>
+                        <button type="button" class="btn btn-light border border-secondary-subtle">
+                            <i class="fa-solid fa-location-dot" alt="" width="30" height="24" class="d-inline-block align-text-top"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

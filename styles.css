@@ -1,0 +1,5 @@
+a.dropdown-item.text-danger:hover {
+    background-color: red;
+    color: white !important;
+    transition: 0.3s all;
+}
